@@ -58,13 +58,18 @@ pip: es el instalador de paquetes para Python.
 requirements.txt: es el archivo en donde se colocará todas las dependencias a instalar en nuestra aplicación.
 
 FLASK_APP: es la variable para identificar el archivo donde se encuentra la aplicación.
+Para crear la variable de entorno hay que ejecutar:
+En linux: export FLASK_APP=main.py
+En Windows: set FLASK_APP=main.py
 
 Debugging en Flask
 Debugging: es el proceso de identificar y corregir errores de programación.
 
 Para activar el debug mode escribir lo siguiente en la consola:
 
-export FLASK_DEBUG=1
+En linux: export FLASK_DEBUG=1
+En window: set FLASK_DEBUG=1
+
 echo $FLASK_DEBUG
 Logging: es una grabación secuencial en un archivo o en una base de datos de todos los eventos que afectan a un proceso particular.
 
@@ -87,7 +92,8 @@ export FLASK_DEBUG=1
 
 flask run
 
-Copia el código en un nuevo archivo dentro de la raíz de tu proyecto
-Guarda el archivo con extension .sh
-Ejecuta desde la consola con el comando: source file_name.sh
+1 - Copia el código en un nuevo archivo dentro de la raíz de tu proyecto
+2 - Guarda el archivo con extension .sh
+3 - Ejecuta desde la consola con el comando: source file_name.sh
 Listo!, Cada vez que quieras levantar el servidor de Flask solo haz el paso 3
+
